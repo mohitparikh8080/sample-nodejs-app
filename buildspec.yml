@@ -4,7 +4,7 @@ phases:
   install:
     runtime-versions:
       nodejs: 14.5.1  
-    pre_build:
+  pre_build:
     commands:
       - echo Installing source NPM dependencies...
       - npm install
