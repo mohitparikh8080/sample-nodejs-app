@@ -6,18 +6,15 @@ phases:
       nodejs: 12  
   pre_build:
     commands:
-      - echo Installing Mocha...
-      - npm install -g mocha
-  pre_build:
-    commands:
       - echo Installing source NPM dependencies...
       - npm install
-      - npm install unit.js
+      - npm init -y
+      - npm install express
   build:
     commands:
       - echo Build started on `date`
       - echo Compiling the Node.js code
-      - mocha test.js
+      - node server.js
   post_build:
     commands:
       - echo Build completed on `date`
