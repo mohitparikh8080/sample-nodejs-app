@@ -1,5 +1,5 @@
 {
-    "family": "next-uk-post-codes",
+    "family": "sample-nodejs-app",
     "executionRoleArn": "arn:aws:iam::577703082096:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "containerDefinitions": [
