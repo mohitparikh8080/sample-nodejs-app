@@ -14,13 +14,13 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Compiling the Node.js code
+      - node test.js
   post_build:
     commands:
       - echo Build completed on `date`
-      - node server.js
 artifacts:
   files:
     - server.js
+    - test.js
     - package.json
-    - package-lock.json
    
