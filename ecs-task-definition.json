@@ -1,0 +1,21 @@
+{
+    "family": "sample-nodejs-app",
+    "executionRoleArn": "arn:aws:iam::577703082096:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "containerDefinitions": [
+        {
+            "name": "sample-nodejs-app",
+            "image": "577703082096.dkr.ecr.ap-south-1.amazonaws.com/sample-nodejs-app:latest",
+            "portMappings": [
+                {
+                    "containerPort": 3000,
+                    "hostPort": 3000,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true
+        }
+    ],
+    "cpu": "256",
+    "memory": "512"
+}
